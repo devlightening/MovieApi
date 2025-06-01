@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieApi.Domain.Entites
 {
-    public class Moive
+    public class Movie
     {
         public int MovieId { get; set; }
         public string Title { get; set; }
