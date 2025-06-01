@@ -8,7 +8,7 @@ namespace MovieApi.Domain.Entites
 {
     public class Review
     {
-        public int ReivewId { get; set; }
+        public int ReviewId { get; set; }
         public string ReivewComment  { get; set; }
         public int UserRating { get; set; }
         public DateTime ReviewDate { get; set; }
