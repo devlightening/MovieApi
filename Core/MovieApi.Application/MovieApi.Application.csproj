@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\CQRSDesignPattern\Handlers\CategoryHandlers\" />
+    <Folder Include="Features\CQRSDesignPattern\Handlers\MovieHandlers\" />
+  </ItemGroup>
+
 </Project>
