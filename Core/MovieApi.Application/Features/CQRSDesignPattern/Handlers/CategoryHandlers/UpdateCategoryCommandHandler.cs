@@ -22,8 +22,6 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.CategoryHandl
             var value = await _movieContext.Categories.FindAsync(command.CategoryId);
             value.CategoryName = command.CategoryName;
             await _movieContext.SaveChangesAsync();
-
-
         }
     }
 }
