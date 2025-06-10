@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieApi.Domain.Entites
+namespace MovieApi.Application.Features.CQRSDesignPattern.Results.CastResults
 {
-    public class Cast
+    public class GetCastByIdQueryResult
     {
         public int CastId { get; set; }
         public string Name { get; set; }
@@ -16,7 +16,5 @@ namespace MovieApi.Domain.Entites
         public string? Overview { get; set; }
         public DateTime BirthDate { get; set; }
         public DateTime? DeathDate { get; set; }
-
-
     }
 }

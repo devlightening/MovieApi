@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieApi.Domain.Entites
+namespace MovieApi.Application.Features.CQRSDesignPattern.Commands.CastCommands
 {
-    public class Cast
+    public class CreateCastCommand
     {
-        public int CastId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string ImageUrl { get; set; }
@@ -16,7 +15,6 @@ namespace MovieApi.Domain.Entites
         public string? Overview { get; set; }
         public DateTime BirthDate { get; set; }
         public DateTime? DeathDate { get; set; }
-
 
     }
 }
