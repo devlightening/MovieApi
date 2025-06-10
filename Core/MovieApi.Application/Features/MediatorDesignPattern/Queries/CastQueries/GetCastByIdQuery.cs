@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using MovieApi.Application.Features.CQRSDesignPattern.Results.CastResults;
+using MovieApi.Application.Features.MediatorDesignPattern.Results.CastResults;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +14,6 @@ namespace MovieApi.Application.Features.MediatorDesignPattern.Queries.CastQuerie
         {
             CastId = castId;
         }
-        public int CastId { get; set; }
-    }
-    {
+        public int CastId { get; set; } 
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.TagHandlers
+namespace MovieApi.Application.Features.MediatorDesignPattern.Handlers.CastHandlers
 {
-    internal class GetTagQueryByIdHandler
+    internal class GetCastByIdQueryHandler
     {
     }
 }
