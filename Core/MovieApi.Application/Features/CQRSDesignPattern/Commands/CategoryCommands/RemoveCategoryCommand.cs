@@ -14,6 +14,5 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Commands.CategoryComma
         }
 
         public int CategoryId { get; set; }
-
     }
 }
