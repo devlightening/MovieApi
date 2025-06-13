@@ -16,6 +16,7 @@ namespace MovieApi.Application.Features.MediatorDesignPattern.Results.CastResult
         public string? Overview { get; set; }
         public DateTime BirthDate { get; set; }
         public DateTime? DeathDate { get; set; }
+        public string Title { get; set; }
 
     }
 }
