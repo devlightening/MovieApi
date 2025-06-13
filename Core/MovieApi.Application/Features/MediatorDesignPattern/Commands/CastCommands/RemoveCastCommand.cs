@@ -13,6 +13,7 @@ namespace MovieApi.Application.Features.MediatorDesignPattern.Commands.CastComma
         {
             CastId = castId;
         }
+
         public int CastId { get; set; }
     }
 }
