@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
 using MovieApi.Application.Features.MediatorDesignPattern.Commands.TagCommands;
 using MovieApi.Domain.Entites;
 using MovieApi.Persistance.Context;
@@ -21,9 +22,9 @@ namespace MovieApi.Application.Features.MediatorDesignPattern.Handlers.TagHandle
 
         public async Task Handle(CreateTagCommand request, CancellationToken cancellationToken)
         {
-            _movieContext.Tags.Add(new Tag
+            await _movieContext.Tags.AddAsync(new Tag
             {
-                Title = request.Title,
+                Title = request.Title
             });
             await _movieContext.SaveChangesAsync();
         }

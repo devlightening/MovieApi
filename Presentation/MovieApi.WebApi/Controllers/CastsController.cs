@@ -12,7 +12,7 @@ namespace MovieApi.WebApi.Controllers
     {
         private readonly IMediator _mediator;
 
-        public  CastsController(IMediator mediator)
+        public CastsController(IMediator mediator)
         {
             _mediator = mediator;
         }
@@ -51,4 +51,5 @@ namespace MovieApi.WebApi.Controllers
             await _mediator.Send(command);
             return Ok("Cast Güncelleme İşlemi Başarılı");
         }
-}
+    }
+} 
