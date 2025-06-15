@@ -21,6 +21,16 @@
 	@await Component.InvokeAsync("_UserLayoutWebUIPreloaderComponentPartial")
 
 
+	<!--preloading-->
+	<div id="preloader">
+		<img class="logo" src="images/logo1.png" alt="" width="119" height="58">
+		<div id="status">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	@await Component.InvokeAsync("_UserLayoutWebUIHeadComponentPartial")
+
 	<!--end of preloading-->
 	<!--login form popup-->
 	@await Component.InvokeAsync("_UserLayoutWebUILoginModalComponentPartial")
