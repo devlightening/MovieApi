@@ -13,11 +13,7 @@ namespace MovieApi.Application.Features.MediatorDesignPattern.Commands.CastComma
         public string Name { get; set; }
         public string Surname { get; set; }
         public string ImageUrl { get; set; }
-        public string? Biography { get; set; }
         public string? Overview { get; set; }
-        public DateTime BirthDate { get; set; }
-        public DateTime? DeathDate { get; set; }
-
-
+        public string? Biography { get; set; }
     }
 }

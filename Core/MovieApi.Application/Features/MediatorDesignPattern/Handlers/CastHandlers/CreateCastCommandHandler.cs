@@ -2,32 +2,30 @@
 using MediatR;
 using MovieApi.Application.Features.MediatorDesignPattern.Commands.CastCommands;
 using MovieApi.Domain.Entites;
+using MovieApi.Domain.Entities;
 using MovieApi.Persistance.Context;
 
 namespace MovieApi.Application.Features.MediatorDesignPattern.Handlers.CastHandlers
 {
     public class CreateCastCommandHandler : IRequestHandler<CreateCastCommand>
     {
-        private readonly MovieContext _movieContext;
-
-        public CreateCastCommandHandler(MovieContext movieContext)
+        private readonly MovieContext _context;
+        public CreateCastCommandHandler(MovieContext context)
         {
-            _movieContext = movieContext;
+            _context = context;
         }
-
         public async Task Handle(CreateCastCommand request, CancellationToken cancellationToken)
         {
-             _movieContext.Casts.Add(new Cast
+            await _context.Casts.AddAsync(new Cast
             {
-                Name = request.Name,
-                Surname = request.Surname,
-                BirthDate = request.BirthDate,
-                ImageUrl = request.ImageUrl,
                 Biography = request.Biography,
-                Overview = request.Overview
-
+                ImageUrl = request.ImageUrl,
+                Name = request.Name,
+                Overview = request.Overview,
+                Surname = request.Surname,
+                Title = request.Title
             });
-            await _movieContext.SaveChangesAsync();
+            await _context.SaveChangesAsync();
         }
     }
 }

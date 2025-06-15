@@ -3,36 +3,29 @@ using Microsoft.EntityFrameworkCore;
 using MovieApi.Application.Features.MediatorDesignPattern.Queries.CastQueries;
 using MovieApi.Application.Features.MediatorDesignPattern.Results.CastResults;
 using MovieApi.Persistance.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MovieApi.Application.Features.MediatorDesignPattern.Handlers.CastHandlers
 {
     public class GetCastQueryHandler : IRequestHandler<GetCastQuery, List<GetCastQueryResult>>
     {
-        private readonly MovieContext _movieContext;
-
-        public GetCastQueryHandler(MovieContext movieContext)
+        private readonly MovieContext _context;
+        public GetCastQueryHandler(MovieContext context)
         {
-            _movieContext = movieContext;
+            _context = context;
         }
-
         public async Task<List<GetCastQueryResult>> Handle(GetCastQuery request, CancellationToken cancellationToken)
         {
-            var values = await _movieContext.Casts.ToListAsync();
+            var values = await _context.Casts.ToListAsync();
             return values.Select(x => new GetCastQueryResult
             {
-                CastId = x.CastId,
-                Name = x.Name,
-                Surname = x.Surname,
-                Title = x.Title,
-                Overview = x.Overview,
                 Biography = x.Biography,
-                ImageUrl = x.ImageUrl
+                CastId = x.CastId,
+                ImageUrl = x.ImageUrl,
+                Name = x.Name,
+                Overview = x.Overview,
+                Surname = x.Surname,
+                Title = x.Title
             }).ToList();
-        }
+        }//AsNoTracking();
     }
 }

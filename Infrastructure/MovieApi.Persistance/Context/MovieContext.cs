@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using MovieApi.Domain.Entites;
+using MovieApi.Domain.Entities;
 
 namespace MovieApi.Persistance.Context
 {
