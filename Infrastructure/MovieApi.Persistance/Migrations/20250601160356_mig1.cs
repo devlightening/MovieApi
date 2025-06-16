@@ -21,7 +21,8 @@ namespace MovieApi.Persistance.Migrations
                     Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Biography = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Overview = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Overview = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
