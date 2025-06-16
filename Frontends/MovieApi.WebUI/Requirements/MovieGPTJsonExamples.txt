@@ -1,0 +1,102 @@
+﻿[
+  {
+    "title": "Inception",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/81p+xe8cbnL._AC_SY679_.jpg",
+    "rating": 8.8,
+    "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO, navigating layered realities.",
+    "duration": 148,
+    "releaseDate": "2010-07-16T00:00:00Z",
+    "createdYear": "2010",
+    "status": true
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51NiGlapXlL._AC_.jpg",
+    "rating": 9.3,
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency, hope, and quiet resilience behind prison walls.",
+    "duration": 142,
+    "releaseDate": "1994-09-23T00:00:00Z",
+    "createdYear": "1994",
+    "status": true
+  },
+  {
+    "title": "Interstellar",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/71nDPcGgF2L._AC_SY679_.jpg",
+    "rating": 8.6,
+    "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival as Earth becomes uninhabitable due to ecological collapse and food shortages.",
+    "duration": 169,
+    "releaseDate": "2014-11-07T00:00:00Z",
+    "createdYear": "2014",
+    "status": true
+  },
+  {
+    "title": "The Godfather",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51rGG5Y29jL._AC_.jpg",
+    "rating": 9.2,
+    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son amid betrayal, violence, and family loyalty.",
+    "duration": 175,
+    "releaseDate": "1972-03-24T00:00:00Z",
+    "createdYear": "1972",
+    "status": true
+  },
+  {
+    "title": "The Dark Knight",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51CbXjRBf5L._AC_.jpg",
+    "rating": 9.0,
+    "description": "When the menace known as the Joker emerges, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice in Gotham City.",
+    "duration": 152,
+    "releaseDate": "2008-07-18T00:00:00Z",
+    "createdYear": "2008",
+    "status": true
+  },
+  {
+    "title": "Pulp Fiction",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51VGIfB1M-L._AC_.jpg",
+    "rating": 8.9,
+    "description": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption, told in Quentin Tarantino’s unique style.",
+    "duration": 154,
+    "releaseDate": "1994-10-14T00:00:00Z",
+    "createdYear": "1994",
+    "status": true
+  },
+  {
+    "title": "Fight Club",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51v5ZpFyaFL._AC_.jpg",
+    "rating": 8.8,
+    "description": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into something much more anarchic and dangerous.",
+    "duration": 139,
+    "releaseDate": "1999-10-15T00:00:00Z",
+    "createdYear": "1999",
+    "status": true
+  },
+  {
+    "title": "Forrest Gump",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51I5Z-3ywrL._AC_.jpg",
+    "rating": 8.8,
+    "description": "The presidencies of Kennedy and Johnson, the Vietnam War, and more unfold through the perspective of an Alabama man with a low IQ but good intentions and a pure heart.",
+    "duration": 142,
+    "releaseDate": "1994-07-06T00:00:00Z",
+    "createdYear": "1994",
+    "status": true
+  },
+  {
+    "title": "Gladiator",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/71rNJQ2g-EL._AC_SY679_.jpg",
+    "rating": 8.5,
+    "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery, becoming a hero in the arena.",
+    "duration": 155,
+    "releaseDate": "2000-05-05T00:00:00Z",
+    "createdYear": "2000",
+    "status": true
+  },
+  {
+    "title": "The Matrix",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51vpnbwFHrL._AC_.jpg",
+    "rating": 8.7,
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers in a dystopian cyber world.",
+    "duration": 136,
+    "releaseDate": "1999-03-31T00:00:00Z",
+    "createdYear": "1999",
+    "status": true
+  }
+]

@@ -1,0 +1,102 @@
+﻿[
+  {
+    "title": "Breaking Bad",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/81W8J6GkL-L._AC_SL1500_.jpg",
+    "rating": 9.5,
+    "description": "Kimya öğretmeni Walter White, kanser teşhisi aldıktan sonra ailesinin geleceğini güvence altına almak için eski öğrencisiyle birlikte metamfetamin üretmeye başlar.",
+    "duration": 49,
+    "releaseDate": "2008-01-20T00:00:00Z",
+    "createdYear": "2008",
+    "status": true
+  },
+  {
+    "title": "Stranger Things",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/81j7OltbGkL._AC_SL1500_.jpg",
+    "rating": 8.7,
+    "description": "1980’lerde Indiana’da geçen dizi, küçük bir çocuğun kaybolmasıyla başlayan ve gizli deneyler, doğaüstü güçler ve alternatif bir evrenle gelişen olayları konu alır.",
+    "duration": 51,
+    "releaseDate": "2016-07-15T00:00:00Z",
+    "createdYear": "2016",
+    "status": true
+  },
+  {
+    "title": "Game of Thrones",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/71P8I3B5lML._AC_SL1178_.jpg",
+    "rating": 9.2,
+    "description": "Westeros kıtasında geçen epik fantastik dizi, taht kavgaları, entrikalar ve kadim tehditlerle örülü bir hikâyede birçok hanedanın iktidar mücadelesini işler.",
+    "duration": 57,
+    "releaseDate": "2011-04-17T00:00:00Z",
+    "createdYear": "2011",
+    "status": true
+  },
+  {
+    "title": "The Crown",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/91YttGJxzNL._AC_SL1500_.jpg",
+    "rating": 8.6,
+    "description": "Kraliçe II. Elizabeth’in gençliğinden itibaren yaşadığı tarihi olayları, özel hayatını ve Britanya monarşisinin değişen yüzünü dramatik bir şekilde ele alır.",
+    "duration": 58,
+    "releaseDate": "2016-11-04T00:00:00Z",
+    "createdYear": "2016",
+    "status": true
+  },
+  {
+    "title": "The Mandalorian",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/71nL0n5XzrL._AC_SL1500_.jpg",
+    "rating": 8.7,
+    "description": "Star Wars evreninde geçen bu dizi, yalnız bir ödül avcısının galaksinin uzak köşelerinde Baby Yoda ile kurduğu bağı ve karşılaştığı tehlikeleri anlatır.",
+    "duration": 40,
+    "releaseDate": "2019-11-12T00:00:00Z",
+    "createdYear": "2019",
+    "status": true
+  },
+  {
+    "title": "The Witcher",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/81G+JY7bHzL._AC_SL1500_.jpg",
+    "rating": 8.1,
+    "description": "Canavar avcısı Geralt of Rivia, büyücü Yennefer ve genç prenses Ciri’nin kaderlerinin kesiştiği karanlık bir fantezi dünyasında geçen büyü ve savaş dolu bir hikâye.",
+    "duration": 60,
+    "releaseDate": "2019-12-20T00:00:00Z",
+    "createdYear": "2019",
+    "status": true
+  },
+  {
+    "title": "Chernobyl",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/71xUKf77ZCL._AC_SL1080_.jpg",
+    "rating": 9.4,
+    "description": "1986’daki Çernobil nükleer felaketini konu alan mini dizi, felaketin teknik boyutunu ve Sovyet sisteminin krizle başa çıkma biçimini dramatik biçimde ele alır.",
+    "duration": 60,
+    "releaseDate": "2019-05-06T00:00:00Z",
+    "createdYear": "2019",
+    "status": true
+  },
+  {
+    "title": "Dark",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/81JpvDEkK1L._AC_SL1500_.jpg",
+    "rating": 8.8,
+    "description": "Almanya’da geçen bu bilim kurgu dizisi, çocukların kaybolmasıyla başlayan olayların zaman yolculuğu, aile bağları ve kaderle örülü sıradışı bir hikâyeye dönmesini anlatır.",
+    "duration": 55,
+    "releaseDate": "2017-12-01T00:00:00Z",
+    "createdYear": "2017",
+    "status": true
+  },
+  {
+    "title": "The Last of Us",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/71VXZ4eSUGL._AC_SL1500_.jpg",
+    "rating": 9.1,
+    "description": "Bir mantar salgını sonrası yıkılmış dünyada Joel ve Ellie, zorlu bir yolculukla hem hayatta kalma hem de insanlığı kurtarma mücadelesi verir. Oyun uyarlaması olarak övgü aldı.",
+    "duration": 60,
+    "releaseDate": "2023-01-15T00:00:00Z",
+    "createdYear": "2023",
+    "status": true
+  },
+  {
+    "title": "Peaky Blinders",
+    "coverImageUrl": "https://m.media-amazon.com/images/I/81z+RPk7-7L._AC_SL1500_.jpg",
+    "rating": 8.8,
+    "description": "Birinci Dünya Savaşı sonrası Birmingham’da geçen dizi, Shelby ailesinin suç imparatorluğunu kurma süreciyle sınıf mücadelesi, ihanet ve siyasi oyunları işliyor.",
+    "duration": 58,
+    "releaseDate": "2013-09-12T00:00:00Z",
+    "createdYear": "2013",
+    "status": true
+  }
+]
