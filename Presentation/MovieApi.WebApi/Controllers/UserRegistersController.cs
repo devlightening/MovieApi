@@ -18,8 +18,20 @@ namespace MovieApi.WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUserRegister(CreateUserRegisterCommand command)
         {
-            await _createrUserRegisterCommandHandler.Handle(command);
-            return Ok("Kullanıcı Başarıyla Eklendi");
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                
+                await _createrUserRegisterCommandHandler.Handle(command);
+                return Ok("Kullanıcı Başarıyla Eklendi");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Hata: {ex.Message}");
+            }
         }
     }
 }

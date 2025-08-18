@@ -24,15 +24,32 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.UserRegisterH
 
         public async Task Handle(CreateUserRegisterCommand command)
         {
-            var user = new AppUser()
+            try
             {
-                UserName = command.Username,
-                Email = command.Email,
-                Name = command.Name,
-                Surname = command.Surname
-            };
-            await _userManager.CreateAsync(user,command.Password);
-
+                var user = new AppUser()
+                {
+                    UserName = command.Username,
+                    Email = command.Email,
+                    Name = command.Name,
+                    SurName = command.Surname // Entity'deki property name ile eşleştirdik
+                };
+                
+                var result = await _userManager.CreateAsync(user, command.Password);
+                
+                if (!result.Succeeded)
+                {
+                    var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                    throw new Exception($"Kullanıcı oluşturulamadı: {errors}");
+                }
+                
+                // Kullanıcı başarıyla oluşturuldu, context'e ekleyelim
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                // Loglama yapılabilir
+                throw new Exception($"Kullanıcı kayıt işlemi başarısız: {ex.Message}");
+            }
         }
             
     }

@@ -1,15 +1,13 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using MovieApi.Application.Features.CQRSDesignPattern.Commands.UserRegisterCommands;
 using MovieApi.Application.Features.CQRSDesignPattern.Handlers.CategoryHandlers;
 using MovieApi.Application.Features.CQRSDesignPattern.Handlers.MovieHandlers;
 using MovieApi.Application.Features.CQRSDesignPattern.Handlers.UserRegisterHandlers;
-using MovieApi.Application.Features.CQRSDesignPattern.Queries.CategoryQuries;
 using MovieApi.Application.Features.MediatorDesignPattern.Handlers.TagHandlers;
+
 using MovieApi.Persistance.Context;
 using MovieApi.Persistance.Identity;
-using System.Reflection;
-using System.Security.Principal;
 
 internal class Program
 {
@@ -19,7 +17,8 @@ internal class Program
 
         // Add services to the container.
 
-        builder.Services.AddDbContext<MovieContext>();
+        builder.Services.AddDbContext<MovieContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
         builder.Services.AddScoped<GetCategoryQueryHandler>();
         builder.Services.AddScoped<GetCategoryByIdQueryHandler>();
@@ -33,6 +32,7 @@ internal class Program
         builder.Services.AddScoped<RemoveMovieCommandHandler>();
         builder.Services.AddScoped<UpdateMovieCommandHandler>();
 
+
         builder.Services.AddScoped<CreaterUserRegisterCommandHandler>();
         builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<MovieContext>();
 
@@ -45,6 +45,17 @@ internal class Program
 
 
 
+
+        // CORS ekle
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAll", policy =>
+            {
+                policy.AllowAnyOrigin()
+                      .AllowAnyMethod()
+                      .AllowAnyHeader();
+            });
+        });
 
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
@@ -65,6 +76,9 @@ internal class Program
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
         }
+
+        // CORS middleware ekle
+        app.UseCors("AllowAll");
 
         app.UseHttpsRedirection();
 
