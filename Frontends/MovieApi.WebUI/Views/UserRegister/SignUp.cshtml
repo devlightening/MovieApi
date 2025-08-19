@@ -1,0 +1,53 @@
+﻿@model CreateUserRegisterDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Yeni Kullanıcı Kaydı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="~/colorlib-regform-31/css/roboto-font.css">
+    <link rel="stylesheet" type="text/css" href="~/colorlib-regform-31/fonts/font-awesome-5/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/colorlib-regform-31/css/style.css" />
+</head>
+<body class="form-v5">
+    <div class="page-content">
+        <div class="form-v5-content">
+            <form class="form-detail" method="post">
+                <h2>MovieApi Yeni Kullanıcı Kaydı</h2>
+                <div class="form-row">
+                    <label>Adınız</label>
+                    <input type="text" asp-for="Name" class="input-text" placeholder="Halil.." required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-row">
+                    <label>Soyadınız</label>
+                    <input type="text" asp-for="Surname" class="input-text" placeholder="Yıldırım.." required>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="form-row">
+                    <label>Kullanıcı Adınız</label>
+                    <input type="text" asp-for="Username" class="input-text" placeholder="CeSilvanus.." required>
+                    <i class="fas fa-user-tag"></i>
+                </div>
+                <div class="form-row">
+                    <label>Mail Adresiniz</label>
+                    <input type="text" asp-for="Email" class="input-text" placeholder="ce.hybusiness@gmail.com.." required pattern="[^@@]+@@[^@@]+.[a-zA-Z]{2,6}">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-row">
+                    <label>Şifre</label>
+                    <input type="password" asp-for="Password" class="input-text" placeholder="******" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-row-last">
+                    <input type="submit" name="register" class="register" value="Kayıt Oluştur">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

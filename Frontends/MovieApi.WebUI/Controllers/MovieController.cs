@@ -18,8 +18,8 @@ namespace MovieApi.WebUI.Controllers
             ViewBag.v2 = "Ana Sayfa";
             ViewBag.v3 = "Tüm Filmler";
 
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7166/api/Movies");
+            var client = _httpClientFactory.CreateClient("ApiClient");
+            var responseMessage = await client.GetAsync("/api/Movies");
             if(responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
