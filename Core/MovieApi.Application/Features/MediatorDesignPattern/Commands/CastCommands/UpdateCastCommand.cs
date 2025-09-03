@@ -16,5 +16,6 @@ namespace MovieApi.Application.Features.MediatorDesignPattern.Commands.CastComma
         public string ImageUrl { get; set; }
         public string? Overview { get; set; }
         public string? Biography { get; set; }
+        public string? Biographya { get; set; }
     }
 }
